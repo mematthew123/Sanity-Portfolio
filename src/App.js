@@ -1,28 +1,20 @@
-import { BrowserRouter, Route } from "react-router-dom"
-import React from "react"
-import Home from "./components/Home"
-import About from "./components/About"
-import NavBar from "./components/NavBar"
-import Projects from "./components/Projects"
-import Post from "./components/Post"
-import SinglePost from "./components/SinglePost"
+import {BrowserRouter as Router, Route, } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import NavBar from './components/NavBar';
 
-function App() {  
+
+function App() {
 
   return (
-
-
-    <BrowserRouter>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/navBar" component={NavBar} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/post/:slug" component={Post} />
-      <Route path="/singlepost" component={SinglePost} />
-
-    </BrowserRouter>
+    <Router>
+      <div>
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+      </div>
+    </Router>
   );
 }
 
-
-export default App
+export default App;
