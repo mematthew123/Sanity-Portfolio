@@ -11,7 +11,7 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+            className="inline-flex items-center py-6 px-3 mr-4 text-white hover:text-white text-4xl font-bold cursive tracking-widest"
           >
 Hello World
           </NavLink>
@@ -19,30 +19,31 @@ Hello World
           <NavLink
             to="/post"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-white"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-white"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-white"
           >
             About Me!
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex- -py-3 px-3 my-6">
+        
 
         <SocialIcon
             url="https://github.com/mematthew123"
-            className="mr-4"
+            className="mr-2"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
@@ -50,7 +51,7 @@ Hello World
 
           <SocialIcon
             url="https://twitter.com/mematthew123"
-            className="mr-4"
+            className="mr-2"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
@@ -58,7 +59,7 @@ Hello World
     
           <SocialIcon
             url="https://linkedin.com/in/mematthew123"
-            className="mr-4"
+            className="mr-2"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
