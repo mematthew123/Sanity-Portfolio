@@ -19,26 +19,32 @@ export default function NavBar() {
           <NavLink
             to="/post"
             activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-indigo-500 hover:text-blue-200"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-indigo-500 hover:text-blue-200"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
           >
             Project
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-indigo-500 hover:text-blue-200"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
           >
             About
           </NavLink>
 
-       
+          <NavLink
+            to="/merch"
+            activeClassName="text-blue-300 bg-transparent"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
+          >
+            Merch
+          </NavLink>
         </nav>
        
       </div>
