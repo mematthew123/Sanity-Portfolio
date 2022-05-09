@@ -4,49 +4,63 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="bg-white backdrop-opacity-50 backdrop-invert bg-indigo/600 ">
-    <div className="container mx-auto flex justify-between">
+    <header className="bg-red-600">
+      <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inline-flex-wrap items-center py-6 px-3 mr-4 text-orange-500 hover:text-blue-200 text-4xl font-bold cursive tracking-widest"
+            className="inline-flex items-center py-6 px-3 mr-4 text-gray-200 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
-            Hello World
+            Hello
           </NavLink>
 
           <NavLink
             to="/post"
-            activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-200 hover:text-green-800"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
-            activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-200 hover:text-green-800"
           >
-            Project
+            Projects
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-200 hover:text-green-800"
           >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/merch"
-            activeClassName="text-blue-300 bg-transparent"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-orange-500 hover:text-blue-200"
-          >
-            Merch
+            About Me!
           </NavLink>
         </nav>
-       
+        <div className="inline-flex py-3 px-3 my-6">
+          <SocialIcon
+            url="https://twitter.com/mematthew123"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url="https://github.com/mematthew123"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url="https://linkedin.com/in/mematthew123"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+        </div>
       </div>
     </header>
   );
