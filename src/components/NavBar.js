@@ -3,45 +3,34 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <div className="max-w-7xl mx-auto px-3 sm:px-4">
-      <div className="flex justify-between items-center border-b-2 border-gray-100 py-0 md:justify-start md:space-x-10">
-        <div className="flex justify-start lg:w-0 lg:flex-1">
-          <nav className="flex">
-            <NavLink
-              to="/"
-              exact
-              activeClassName="text-white"
-              className="inline-flex items-center py-6 px-3 text-teal-700 hover:text-gray-800 text-4xl font-bold cursive tracking-widest"
-            >
-              Hello
-            </NavLink>
-
-            <NavLink
-              to="/post"
-              activeClassName="text-red-100 bg-red-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-500 hover:text-gray-800"
-            >
-              Blog Posts
-            </NavLink>
-            <NavLink
-              to="/project"
-              activeClassName="text-red-100 bg-red-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-500 hover:text-gray-800"
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="/about"
-              activeClassName="text-red-100 bg-red-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-500 hover:text-gray-800"
-            >
-              About
-            </NavLink>
-
-
-          </nav>
-        </div>
+    <nav className="flex items-center justify-between flex-column bg-black p-6">
+      <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <NavLink to="/" className="font-bold text-xl tracking-tight">
+          Matthew Rhoads
+        </NavLink>
       </div>
-    </div>
+      <div className="flex flex-wrap items-left">
+        <NavLink
+
+          to="/project"
+          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+        > 
+
+          Projects
+        </NavLink>
+        <NavLink
+          to="/about"
+          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/post"
+          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+        >
+          Blog
+        </NavLink>
+      </div>  
+    </nav>
   );
 }
