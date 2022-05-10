@@ -9,24 +9,24 @@ export default function NavBar() {
           Matthew Rhoads
         </NavLink>
       </div>
-      <div className="flex flex-wrap items-left">
+      <div className="flex flex-column items-left">
         <NavLink
 
           to="/project"
-          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
         > 
 
           Projects
         </NavLink>
         <NavLink
           to="/about"
-          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
         >
           About
         </NavLink>
         <NavLink
           to="/post"
-          className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold hover:text-gray-400 mr-4"
+          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
         >
           Blog
         </NavLink>
