@@ -3,34 +3,23 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between flex-column bg-black p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <NavLink to="/" className="font-bold text-xl tracking-tight">
-          Matthew Rhoads
-        </NavLink>
-      </div>
-      <div className="flex flex-column items-left">
-        <NavLink
 
-          to="/project"
-          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
-        > 
 
-          Projects
-        </NavLink>
-        <NavLink
-          to="/about"
-          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/post"
-          className="block mt-0 sm:inline-block sm:mt-0 text-white font-bold hover:text-gray-400 mr-4"
-        >
-          Blog
-        </NavLink>
-      </div>  
-    </nav>
+      <div className="navbar bg-black text-white">
+  <div className="flex-1">
+    <a className="btn btn-ghost normal-case text-xl " href= "/">Hello</a>
+  </div>
+  <div class="flex-none">
+    <button class="btn btn-square btn-ghost w-auto">
+      < NavLink className="about-link hover:bg-gray-600 mr-3" to="/about">about</NavLink>
+      < NavLink className="about-link hover:bg-gray-600 mr-3" to="/post">Blog</NavLink>
+      < NavLink className="about-link hover:bg-gray-600 mr-3" to="/project">Projects</NavLink>
+
+    </button>
+  </div>
+</div>
+
+      
+      
   );
 }

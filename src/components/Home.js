@@ -2,15 +2,17 @@ import React from "react";
 
   export default function Home() {
     return (
-      <main>
       
-        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8 bg-black">
-          <h1 className=" mt-15 text-6xl text-white font-bold cursive leading-none lg:leading-snug home-name">
-            Hello world. 
-            <br />
-            I'm Matthew.
-          </h1>
-        </section>
-      </main>
+      <div className="  container mx-auto  bg-black text-white min-h-screen min-w-full">
+          <div className=" mt-0.5 text-5xl text-white flex justify-center cursive">
+
+        <h1 className="text-5xl mt-40 sm:mt-10 text-white flex justify-center cursive">Matthew Rhoads</h1>
+
+
+          </div>
+
+
+
+      </div>
     );
   }
