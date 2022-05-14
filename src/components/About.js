@@ -1,6 +1,5 @@
 import React from "react";
-import image from "/Users/matthew/Documents/GitHub/Sanity-Portfolio/src/guy.jpg";
-
+import image from "../guy.jpg";
 
 
 export default function About() {
