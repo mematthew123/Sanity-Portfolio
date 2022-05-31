@@ -1,6 +1,4 @@
 import React from "react";
-import image from "../guy.jpg";
-
 
 export default function About() {
 
@@ -24,9 +22,7 @@ export default function About() {
       </div>
       <div className="lg:w-8/12 mt-6 md:mt-8 lg:mt-0">
         <div className="relative w-full h-full">
-          <img src={image}className="w-full h-full relative hidden lg:block" />
-          <img src={image} className="w-full h-full lg:hidden sm:hidden" />
-           
+       
           </div>
       
       </div>
