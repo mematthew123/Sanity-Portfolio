@@ -1,5 +1,4 @@
 import React from "react";
-import image from "/Users/matthew/Documents/GitHub/Sanity-Portfolio/src/guy.jpg";
 
 
 

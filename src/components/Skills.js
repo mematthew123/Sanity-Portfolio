@@ -1,0 +1,48 @@
+import React, { useEffect, useState } from 'react'
+import sanityClient from '../client.js'
+
+export default function Skills() {
+  const [skillsData, setskillsData] = useState(null)
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "skills"]{
+        title,
+            
+        description,
+      
+        logos
+      }`
+      )
+      .then((data) => setskillsData(data))
+      .catch(console.error)
+  }, [])
+
+  return (
+    <main className="bg-black min-h-screen p-12">
+      <section className="container mx-auto">
+        <h1 className="text-5xl text-white flex justify-center cursive">Skills</h1>
+
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {skillsData &&
+            skillsData.map((skills, index) => (
+              <div className=" text-center flex-wrap relative rounded-lg shadow-xl bg-white p-6">
+                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-7001">
+                  <a
+                    href={skills.link}
+                    alt={skills.title}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {skills.title}
+                  </a>
+                </h3>
+                <div className="text-gray-500 text-xs space-x-4"></div>
+              </div>
+            ))}
+        </section>
+      </section>
+    </main>
+  )
+}
