@@ -1,10 +1,11 @@
 import React from 'react'
 import { SocialIcon } from "react-social-icons";
 import Skills from './Skills';
+import Footer from './Footer';
 
 export default function Home() {
   return (
-    <main className="container mx-auto bg-black text-white min-h-screen min-w-full">
+    <main className="container mx-auto bg-black text-white min-h-screen min-w-full pt-12 ">
       <div className="flex flex-col md:flex-row justify-center p-6 ">
         <div className=" justify-center">
           <h1 className="text-5xl font-bold leading-none mb-2 justify-center mt-32 sm:mt-20">
@@ -32,8 +33,6 @@ export default function Home() {
 
       
       </div>
-      {/* <Skills /> */}
-
     </main>
   );
 }

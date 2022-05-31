@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
 
-    <footer class="h-10 bg-blue-500">Footer</footer>
+    <footer class="h-8 bg-black text-right text-white"> 💚 sanity.io</footer>
     
       
 

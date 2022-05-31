@@ -21,7 +21,7 @@ function App() {
         <Route path="/project" component={Project} />
         <Route path="/post/:slug" component={SinglePost} />
         <Route path="/merch" component={Merch} />
-        {/* <Footer/> */}
+        <Footer />
 
       </div>
     </Router>
