@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Project from "./components/Project";
 import SinglePost from "./components/SinglePost";
 import Merch from "./components/Merch";
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/project" component={Project} />
         <Route path="/post/:slug" component={SinglePost} />
         <Route path="/merch" component={Merch} />
+        {/* <Footer/> */}
 
       </div>
     </Router>
