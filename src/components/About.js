@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../guy.jpg'
+import image from '../matt-bernie.jpg'
 
 export default function About() {
   return (
