@@ -10,7 +10,7 @@ export default function About() {
             <div className="lg:w-4/12 flex justify-center items-center">
               <div>
                 <h1 className="dark:text-white text-4xl md:text-5xl xl:text-6xl font-semibold text-white w-7/12">
-                  Who am i ...?
+                 About me 
                 </h1>
                 <p className="dark:text-gray-300 md:w-7/12 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-white">
                   I am skilled in Javascript, Java, Reactjs, Shopify and Wordpress. I take pride in

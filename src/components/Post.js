@@ -20,8 +20,7 @@ export default function Post() {
         }
       }`
       )
-      .then((data) => setPost(data))
-      .catch(console.error);
+    
   }, []);
 
   return (
