@@ -13,13 +13,13 @@ export default function About() {
                  About me 
                 </h1>
                 <p className="dark:text-gray-300 md:w-7/12 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-white">
-                  I am skilled in Javascript, Java, Reactjs, Shopify and Wordpress. I take pride in
+                  I am experienced in Javascript, Java, Reactjs, Shopify, Wordpress and Next js. I take pride in
                   my work and always strive to deliver a high quality product. I have a passion for
-                  learning new things and I am always looking to improve my skills.
+                  learning new things and I am always looking to improve my skills. I enjoy writing and being part of the open source community.
                 </p>
                 <p className="dark:text-gray-300 md:w-7/12 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-white">
-                  When not in front of a computer, you can usually find me spenidng time along the
-                  Clark Fork river or in the mountains.
+                  When not in front of a computer, you can usually find me spending time along the
+                  Clark Fork river or in the mountains. 🏔 🐶 
                 </p>
               </div>
             </div>

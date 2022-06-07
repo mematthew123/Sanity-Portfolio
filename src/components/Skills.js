@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import sanityClient from '../client.js'
 
-export default function Skills() {
-  const [skillsData, setskillsData] = useState(null)
+function Skills() {
+  const [skillsData, setSkillsData] = useState(null)
 
   useEffect(() => {
     sanityClient
@@ -15,16 +15,16 @@ export default function Skills() {
         logos
       }`
       )
-      .then((data) => setskillsData(data))
+      .then((data) => setSkillsData(data))
       .catch(console.error)
   }, [])
 
   return (
     <main className="bg-black min-h-screen p-12">
-      <section className="container mx-auto">
+      <section className="container mx-auto flex-row justify-center ">
         <h1 className="text-5xl text-white flex justify-center cursive">Skills</h1>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <section className=" mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {skillsData &&
             skillsData.map((skills, index) => (
               <div className=" text-center flex-wrap relative rounded-lg shadow-xl bg-white p-6">
@@ -46,3 +46,4 @@ export default function Skills() {
     </main>
   )
 }
+export default Skills
